@@ -122,8 +122,7 @@ export default {
       })
       this.slider.on('scrollEnd', this._handleScrollEnd)
       this.slider.on('beforeScrollStart', () => {
-        this.slider.disable()
-        clearTimeout(this.timer)
+        this.autoPlay && clearTimeout(this.timer)
       })
       this.slider.on('touchEnd', () => {
         this.autoPlay && this._play()
