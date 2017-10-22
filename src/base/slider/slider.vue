@@ -66,7 +66,7 @@ export default {
     })
   },
   activated() {
-    if (!this.slider || !this.slider.enabled) {
+    if (!this.slider) {
       return
     }
     this.slider.enable()
