@@ -1,9 +1,24 @@
 <template>
-  <h1>Welcome to Single page.</h1>
+  <div>
+    <my-scroll></my-scroll>
+  </div>
 </template>
 
 <script type='text/ecmascript-6'>
-  export default {}
+  import myScroll from 'base/scroll/myScroll'
+
+  export default {
+    data () {
+      return {
+        data: [
+          1, 2, 3, 4, 5, 6, 7, 8
+        ]
+      }
+    },
+    components: {
+      myScroll
+    }
+  }
 </script>
 
 <style scoped lang='stylus' rel='stylesheet/stylus'>
